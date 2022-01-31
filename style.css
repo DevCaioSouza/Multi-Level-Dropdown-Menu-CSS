@@ -19,8 +19,23 @@ html, body{
 
 /* Arrow */
 
-.arrow {
-    display: none;
+.arrow{
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    float: left;
+    z-index: 0;
+    margin: 17px 1em 0 2em;
+}
+
+.item input + .arrow {
+    transform: rotate(-90deg);
+    transition: 0.1s;
+}
+
+.item input:checked + .arrow{
+    transform: rotate(0deg);
+    transition: 0.1s;
 }
 
 /* Styles */
@@ -38,9 +53,9 @@ label {
 
 .nav{
     width: 100%;
-    background-color: white;
+    background-color: #eeeeee;
     overflow-x: hidden;
-    border-bottom: 1px solid #cfd8dc;
+    border-bottom: 1px solid #82c3df;
 }
 
 #nav-icon {
@@ -52,5 +67,30 @@ label {
 }
 
 .nav ul, .nav li, label {
-
+    line-height: 50px;
+    margin: 0;
+    padding: 0 2em;
+    list-style: none;
+    text-decoration: none;
+    color: #90a4ae;
+    font-weight: 100;
+    width: 100%;
 }
+
+.item ul {
+    padding: 0 0.25em;
+}
+
+.nav li a {
+    line-height: 50px;
+    margin: 0;
+    padding: 0 4em;
+    list-style: none;
+    text-decoration: none;
+    color: #90a4ae;
+    font-weight: 100;
+}
+
+
+
+
